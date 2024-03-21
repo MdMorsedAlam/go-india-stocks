@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="w-[100vw] h-[100vh] flex">
       <div
-        className={`bg-blue-600 transition-all w-[25%] ease-in-out ${
+        className={`bg-blue-950 transition-all w-[25%] ease-in-out ${
           arrow ? " hidden" : ""
         } `}
       >
@@ -32,10 +32,10 @@ const Home = () => {
           )}
         </button>
 
-        <div className={` ${arrow ? "w-[75%]" : "w-[75%]"}`}>
+        <div className={` ${arrow ? "w-[75%]" : "w-[65%]"}`}>
           <Disscussion />
         </div>
-        <div className="bg-yellow-500 w-[25%]">
+        <div className="bg-yellow-500 w-[35%]">
           <MarketStories />
         </div>
       </div>

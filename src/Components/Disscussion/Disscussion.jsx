@@ -14,9 +14,9 @@ const Disscussion = () => {
       <span className="capitalize text-4xl text-red-600 rounded-md font-semibold bg-gray-300 p-3 overflow-hidden">
         Disscussion Fourm
       </span>
-      <div className="mt-5 flex flex-col gap-5">
+      <div className="mt-8 mr-5 flex flex-col gap-8">
         {disscussData.map((data) => (
-          <Card key={data.id} />
+          <Card key={data.id} item={data} />
         ))}
       </div>
     </div>

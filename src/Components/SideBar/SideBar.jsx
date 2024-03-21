@@ -14,21 +14,34 @@ const SideBar = () => {
       </div>
       <hr className="" />
       <div className="p-4 text-white text-lg">
-        <ul className="flex flex-col gap-2">
-          <li className="flex items-center gap-2">
+        <ul className="flex flex-col">
+          <li className="flex items-center hover:bg-blue-900 p-2 rounded-lg gap-2">
             <BsChatLeftTextFill className="text-2xl" />
-            Disscussion Fourm
+            <a href="#">Disscussion Fourm</a>
           </li>
-          <li className="flex items-center gap-3">
+          <li className="flex items-center hover:bg-blue-900 p-2 rounded-lg gap-2">
             <FaCommentDollar className="text-2xl" />
-            Market Stories
+
+            <a href="#">Market Stories</a>
           </li>
-          <li>Sentiment</li>
-          <li>Market</li>
-          <li>Sector</li>
-          <li>Watchlits</li>
-          <li>Events</li>
-          <li>News/Interview</li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">Sentiment</a>
+          </li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">Market</a>
+          </li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">Sector</a>
+          </li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">Watchlits</a>
+          </li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">Events</a>
+          </li>
+          <li className="hover:bg-blue-900 p-2 rounded-lg ml-8">
+            <a href="#">News/Interview</a>
+          </li>
         </ul>
       </div>
     </div>
