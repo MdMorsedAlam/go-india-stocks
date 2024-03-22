@@ -4,39 +4,43 @@ import React from "react";
 import { FaRegHeart, FaCommentAlt, FaShareAlt } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
 
-const Card = ({ item }) => {
-  console.log(item);
+const Card = () => {
   return (
-    <div className="p-3 flex gap-3 shadow-2xl rounded-md">
-      <div className="w-16 h-16 overflow-hidden rounded-full">
+    <div className="lg:p-3 p-1 flex gap-1 lg:gap-3 shadow-2xl rounded-md">
+      <div className="lg:w-16 lg:h-16 h-12 w-12 overflow-hidden rounded-full">
         <img
           className="w-full overflow-hidden h-full"
-          src={item.img}
-          alt={item.img}
+          src="/avatar.png"
+          alt="/avatar.png"
         />
       </div>
       <div className="flex flex-1 flex-col gap-3">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-3 items-center">
-            <h3 className="text-xl font-semibold">{item.title}</h3>
-            <p className="bg-blue-500 px-3 py-1 text-white font-bold rounded-2xl">
-              {item.sector}
+        <div className="flex gap-1 md:gap-3 items-center">
+          <h3 className="md:text-xl font-semibold">Lorem Ipsum</h3>
+          <div className="flex flex-1 justify-between items-center">
+            <p className="bg-blue-500 px-1 md:px-3 py-1 text-white md:font-bold rounded-2xl">
+              Sector 2
             </p>
+            <p className="text-blue-500 md:font-bold">2 min ago</p>
           </div>
-          <p className="text-blue-500 font-bold">2 min ago</p>
         </div>
-        <p>{item.des}</p>
+
+        <p>
+          Temporibus autem quibusdam et aut officiis debitis aut rerum
+          necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+          molestiae non recusandae.
+        </p>
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <FaRegHeart /> <p>{item.like}K</p>
+          <div className="flex items-center md:gap-2">
+            <FaRegHeart /> <p>2K</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center md:gap-2">
             <FaRegEye /> <p>2K</p>
           </div>
-          <div className="flex items-center gap-2">
-            <FaCommentAlt /> <p>{item.comments}K Comments</p>
+          <div className="flex items-center md:gap-2">
+            <FaCommentAlt /> <p>2K Comments</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center md:gap-2">
             <FaShareAlt /> <p>Share</p>
           </div>
         </div>

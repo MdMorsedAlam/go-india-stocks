@@ -10,17 +10,20 @@ const SideBar = () => {
           <BsFillPersonFill className="text-3xl text-white" />
           <p className="text-xl font-bold text-white">Hello,User</p>
         </div>
-        <IoIosNotifications className="text-3xl text-white" />
+        <div className="indicator">
+          <IoIosNotifications className="text-3xl text-white" />
+          <span className="badge badge-xs badge-danger indicator-item"></span>
+        </div>
       </div>
       <hr className="" />
-      <div className="p-4 text-white text-lg">
+      <div className="lg:p-4 p-1 text-white text-lg">
         <ul className="flex flex-col">
           <li className="flex items-center hover:bg-blue-900 p-2 rounded-lg gap-2">
-            <BsChatLeftTextFill className="text-2xl" />
+            <BsChatLeftTextFill className="text-lg lg:text-2xl" />
             <a href="#">Disscussion Fourm</a>
           </li>
           <li className="flex items-center hover:bg-blue-900 p-2 rounded-lg gap-2">
-            <FaCommentDollar className="text-2xl" />
+            <FaCommentDollar className="text-lg lg:text-2xl" />
 
             <a href="#">Market Stories</a>
           </li>
