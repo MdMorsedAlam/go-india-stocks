@@ -8,8 +8,11 @@ const Card = () => {
   return (
     <div className="lg:p-3 p-1 flex gap-1 lg:gap-3 shadow-2xl rounded-md">
       <div className="lg:w-16 lg:h-16 h-12 w-12 overflow-hidden rounded-full">
-        <img
-          className="w-full overflow-hidden h-full"
+        <Image
+          width={100}
+          height={100}
+          placeholder="blur"
+          blurDataURL="/avatar.png"
           src="/avatar.png"
           alt="/avatar.png"
         />
