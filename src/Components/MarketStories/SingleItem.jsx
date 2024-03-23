@@ -1,9 +1,13 @@
+import Image from "next/image";
+
 /* eslint-disable @next/next/no-img-element */
 const SingleItem = () => {
   return (
+    // This Is The Main Div Of Single Item
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure>
-        <img className="w-full h-full" src="/sunset.jpg" alt="/sunset.jpg" />
+        {/* This Is The Image Component Comes From Nextjs */}
+        <Image width={1000} height={1000} src="/sunset.jpg" alt="/sunset.jpg" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">The Coldest Sunset</h2>
